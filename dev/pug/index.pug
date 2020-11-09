@@ -1,0 +1,119 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	.container
+		section.cat-section-s
+			.cat-section-sort
+				span.cat-section-sort__text Сортировать по:
+				button.cat-section-sort__btn.cat-section-sort__btn--price
+					span.cat-section-sort__title Цене
+					+icon('arrow', 'cat-section-sort__icon')
+				button.cat-section-sort__btn.cat-section-sort__btn--age
+					span.cat-section-sort__title Возрасту
+					+icon('arrow', 'cat-section-sort__icon')
+			.cat-section
+				.cat-section__item.cat-item(data-price="1")
+					.cat-item__img
+						img(src="static/images/content/item-1.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+						span.cat-item__img-sale -40%
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 30 000 руб.
+					a(href="#").cat-item__btn Купить
+				.cat-section__item.cat-item(data-price="2")
+					.cat-item__img
+						img(src="static/images/content/item-2.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 35 000 руб.
+					a(href="#").cat-item__btn Купить
+				.cat-section__item.cat-item(data-price="3")
+					.cat-item__img
+						img(src="static/images/content/item-3.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 32 000 руб.
+					a(href="#").cat-item__btn Купить
+				.cat-section__item.cat-item(data-price="4")
+					.cat-item__img
+						img(src="static/images/content/item-1.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 20 000 руб.
+					a(href="#").cat-item__btn Купить
+				.cat-section__item.cat-item(data-price="5")
+					.cat-item__img
+						img(src="static/images/content/item-4.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+						span.cat-item__img-sale -40%
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 40 000 руб.
+					a(href="#").cat-item__btn Купить
+				.cat-section__item.cat-item(data-price="6")
+					.cat-item__img
+						img(src="static/images/content/item-1.jpg" alt="кошак")
+						+icon('heart', 'cat-item__img-icon')
+					.cat-item__block
+						h3.cat-item__name Кот полосатый
+						.cat-item__info
+							span.cat-item__info-label.cat-item__info-label--color Коричневый окрас
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--age 2 мец.
+								.cat-item__info-label Возраст
+							.cat-item__info-about
+								.cat-item__info-text.cat-item__info-label--sum 4
+								.cat-item__info-label Кол-во лап
+						span.cat-item__price 5 000 руб.
+					a(href="#").cat-item__btn Купить
+
+			button(type = "submit").cat-section-s__more Показать еще 20
+			button(type = "button").btn-scroll
+				+icon('arrow-top', 'btn-scroll__icon')
